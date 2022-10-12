@@ -9,7 +9,8 @@ import random
 
 app = Flask(__name__)
 
-Qs = ["movie1","movie2","movie3","movie4","movie5"]
+file = open("movies.txt","r")
+Qs = file.read().split('\n')
 
 email_mapping = {"Naman":"abcd@domain.com","Palak":"abcd@domain.com","Raja":"abcd@domain.com","Bhashkar":"abcd@domain.com","Pronoy":"abcd@domain.com","Bharat":"abcd@domain.com","Nimma":"abcd@domain.com","Fahima":"abcd@domain.com","Amrita":"abcd@domain.com","Vikash":"abcd@domain.com","Renu":"abcd@domain.com","Namrata":"abcd@domain.com"}
 
